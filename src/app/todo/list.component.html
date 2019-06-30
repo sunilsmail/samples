@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let todo of listtodo" [class.high]="todo.priority=='high'"
+  [class.done]="todo.status=='done'" >{{todo.title}}
+
+
+    <a (click)="removeTodo(todo)" style="float:right">X</a>
+
+  </li>
+</ul>
